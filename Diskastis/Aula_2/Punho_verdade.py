@@ -1,6 +1,3 @@
-# dois números inteiros de 1 a 1000 para as ações que Lara e Irmão do Jorel irão fazer 
-# um número inteiro de 1 a 100 para o nível de dificuldade dos inimigos.
-
 velocidade_IJ = int(input())
 velocidade_LR = int(input())
 dificuldade_inimigos = int(input())

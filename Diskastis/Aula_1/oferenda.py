@@ -1,0 +1,13 @@
+D = int(input())
+
+if D <= 10:
+    print("Arthur")
+
+elif D <= 30:
+    print("Luiz")
+
+elif D <= 100:
+    print("Pedro")
+
+else:
+    print("Nenhum")

@@ -1,6 +1,3 @@
-# Aliens disponíveis: Chama , XLR8, Diamante, Besta e Ultra-T
-#  só pode usar esses 5 aliens, se isso acontecer ele não poderá se transformar.
-
 aliens = ('Chama' , 'XLR8', 'Diamante', 'Besta', 'Ultra-T')
 
 Aliens = input()

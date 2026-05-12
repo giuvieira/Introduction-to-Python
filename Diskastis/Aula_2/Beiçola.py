@@ -1,13 +1,31 @@
 nome_competidor1 = input()
-pasteis_competidor1 = input()
+pasteis_competidor1 = int(input())
 
 nome_competidor2 = input()
-pasteis_competidor2 = input()
+pasteis_competidor2 = int(input())
 
 nome_competidor3 = input()
-pasteis_competidor3 = input()
+pasteis_competidor3 = int(input())
+
+if(pasteis_competidor1 > pasteis_competidor2 and pasteis_competidor1 > pasteis_competidor3):
+    nome_Campeao = nome_competidor1  
+    qnt_campeao = pasteis_competidor1  
+elif(pasteis_competidor2 > pasteis_competidor1 and pasteis_competidor2 > pasteis_competidor3):
+    nome_Campeao = nome_competidor2
+    qnt_campeao = pasteis_competidor2
+else:
+    nome_Campeao = nome_competidor3 
+    qnt_campeao = pasteis_competidor3
 
 if( nome_competidor1 == 'Lineu'or nome_competidor2 == 'Lineu' or nome_competidor3 == 'Lineu'):
     print('Lineu comeu um pastel com gosto estranho e usou sua autoridade na vigilancia sanitaria para acabar com a competição, Beiçola tá desolado!')
-else: 
-    print('ok')
+else:
+    print(f'A(O) campeã(o) é {nome_Campeao}, com {qnt_campeao} pastéis consumidos!')
+if((nome_competidor1 == 'Floriano'or nome_competidor2 == 'Floriano' or nome_competidor3 == 'Floriano') and nome_Campeao != 'Floriano'):
+    print(f'Anos comendo pastel e perdeu justo para {nome_Campeao}, lastimável, Sr. Flor!')
+
+if(nome_Campeao == 'Agostinho'):
+    if qnt_campeao > 100:
+        print('Acho que o Agostinho deve ter escondido alguns pastéis na calça, pilantra!')
+    elif qnt_campeao > 50:
+        print('Agostinho madrugou no taxi e veio cheio de fome para a competição!')
